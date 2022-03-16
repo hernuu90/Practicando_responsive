@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+  .destaques__secundario:nth-child(2),
+  .destaques__secundario:nth-child(3),
+  .destaques__secundario:nth-child(4),
+  .destaques__secundario:nth-child(5) {
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+  /*solo saco las cosas que NO se modifican al hacerlo responsivo,
+las cosas que se modifican son las que dejo establecidas en el query.
+Puedo separar con una COMA las cosas que tienen los mismos metodos.*/
+
+  .destaques__principal,
+  .destaques__categorias {
+    grid-column: 1/5;
+  }
+
+  .populares__contenido{
+    flex-direction: column; /* aca le dije q lo haga en columnas y no uno lado otro*/
+}
+
+.populares__card{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+}
